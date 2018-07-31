@@ -8,12 +8,19 @@ $choice = 'vrai';
   <title>Exercice 2</title>
 </head>
 <body>
-  <?php
-  $string = 'Bonjour';
-   function returnString($string){
-     return $string;
-   }
-   echo returnString($string);
-  ?>
+  <!-- Ouverture des balises PHP dans une balise p -->
+  <p>
+    <?php
+    // Définition de la variable
+    $string = 'Bonjour';
+    // Création de la fonction
+     function returnString($string){
+       //retour de la valeur de la variable
+       return $string;
+     }
+     // Affichage de la fonction Bonjour
+     echo returnString($string);
+    ?>
+  </p>
 </body>
 </html>

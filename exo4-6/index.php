@@ -5,14 +5,17 @@
   <title>Exercice 6</title>
 </head>
 <body>
+  <!-- Ouverture des balises PHP dans une balise p -->
+  <p>
   <?php
     // Déclaration de la fonction whatAge
     function whatAge($firstName, $lastName, $age) {
-    // Concaténation
+    // Concaténation et affichage
     echo $firstName . ' ' . $lastName . ' tu as ' . $age . ' ans.';
     }
     // Appel de la fonction
     whatAge('Pierre','Martin',21);
   ?>
+  </p>
 </body>
 </html>

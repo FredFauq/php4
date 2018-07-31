@@ -5,17 +5,19 @@
   <title>Exercice 8</title>
 </head>
 <body>
+  <!-- Ouverture des balises PHP dans une balise p -->
+  <p>
   <?php
     // Déclaration de la fonction numberfunction
-    function numberFunction($number1, $number2, $number3) {
+    function numberFunction($firstNumber, $secondNumber, $thirdNumber) {
      // Concaténation des 3 nombres en parametre de la fonction
-     $result = $number1 + $number2 + $number3;
+     $result = $firstNumber+ $secondNumber + $thirdNumber;
      // Affichage du resultat
      echo $result;
    }
      // Appel de la fonction et définition des parametres
      numberFunction(10, 20, 30);
-
   ?>
+</p>
 </body>
 </html>

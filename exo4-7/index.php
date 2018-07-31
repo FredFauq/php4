@@ -5,6 +5,8 @@
   <title>Exercice 7</title>
 </head>
 <body>
+  <!-- Ouverture des balises PHP dans une balise <p> -->
+  <p>
   <?php
     // Déclaration de la fonction ageGender
     function ageGender($age, $gender) {
@@ -31,5 +33,6 @@
   ageGender('Femme',15);
   ageGender('Homme',15);
   ?>
+</p>
 </body>
 </html>

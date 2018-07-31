@@ -5,14 +5,17 @@
   <title>Exercice 5</title>
 </head>
 <body>
+  <!-- Ouverture des balises PHP dans une balise p -->
+  <p>
   <?php
   // Déclaration de la fonction numberChar
   function numberChar($number, $char) {
-  // Concaténation
+  // Concaténation et affichage
    echo $char.' a '.$number.' ans';
  }
- // Appel de la fonction
+ // Appel de la fonction numberChar
  numberChar(10,'Toto');
   ?>
+</p>
 </body>
 </html>

@@ -5,14 +5,16 @@
   <title>Exercice 4</title>
 </head>
 <body>
+  <!-- Ouverture des balises PHP dans une balise p -->
+  <p>
   <?php
   // Déclaration de la fonction test
-  function test($number1, $number2){
-    // Condition si number1 est supérieur à number2
-    if ($number1 > $number2) {
+  function test($firstNumber, $secondNumber){
+    // Condition si $firstNumber est supérieur à $secondNumber
+    if ($firstNumber > $number2) {
       echo 'Le premier nombre est plus grand.';
-    // Condition si number1 est identique à number2
-    } elseif ($number1 == $number2) {
+    // Condition si $firstNumber est identique à $secondNumber
+    } elseif ($firstNumber == $secondNumber) {
       echo 'Les deux nombres sont identiques.';
     // dans les autre cas
     } else {
@@ -24,5 +26,6 @@
   test(8,23);
   test(6, 6);
   ?>
+</p>
 </body>
 </html>
