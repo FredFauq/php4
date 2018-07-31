@@ -11,7 +11,7 @@
   // Déclaration de la fonction test
   function test($firstNumber, $secondNumber){
     // Condition si $firstNumber est supérieur à $secondNumber
-    if ($firstNumber > $number2) {
+    if ($firstNumber > $secondNumber) {
       echo 'Le premier nombre est plus grand.';
     // Condition si $firstNumber est identique à $secondNumber
     } elseif ($firstNumber == $secondNumber) {
