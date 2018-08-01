@@ -1,3 +1,10 @@
+<?php
+// Déclaration de la fonction numberChar
+function numberChar($number, $char) {
+// Concaténation et affichage
+ echo $char.' a '.$number.' ans';
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,11 +15,6 @@
   <!-- Ouverture des balises PHP dans une balise p -->
   <p>
   <?php
-  // Déclaration de la fonction numberChar
-  function numberChar($number, $char) {
-  // Concaténation et affichage
-   echo $char.' a '.$number.' ans';
- }
  // Appel de la fonction numberChar
  numberChar(10,'Toto');
   ?>

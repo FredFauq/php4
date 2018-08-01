@@ -1,7 +1,9 @@
 <?php
-// Définition des variables
-$firstString = 'Hello';
-$secondString = 'World';
+// Définition de la fonction
+function returnString($firstString, $secondString){
+  // Retour de la concaténation des deux variables
+   return  $firstString . $secondString;
+ }
  ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,13 +15,8 @@ $secondString = 'World';
   <!-- Ouverture des balises PHP dans une balise p -->
   <p>
   <?php
-  // Définition de la fonction
-  function returnChoice($firstString, $secondString){
-    // Retour de la concaténation des deux variables
-     return $result = $firstString . $secondString;
-   }
    // Affichage du résultat de la fonction
-   echo returnChoice($firstString , $secondString);
+   echo returnString('Hello ','World !');
   ?>
 </p>
 </body>

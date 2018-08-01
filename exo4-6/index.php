@@ -1,3 +1,10 @@
+<?php
+// Déclaration de la fonction whatAge
+function whatAge($firstName, $lastName, $age){
+// Concaténation et affichage
+echo $firstName . ' ' . $lastName . ' tu as ' . $age . ' ans.';
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,11 +15,6 @@
   <!-- Ouverture des balises PHP dans une balise p -->
   <p>
   <?php
-    // Déclaration de la fonction whatAge
-    function whatAge($firstName, $lastName, $age) {
-    // Concaténation et affichage
-    echo $firstName . ' ' . $lastName . ' tu as ' . $age . ' ans.';
-    }
     // Appel de la fonction
     whatAge('Pierre','Martin',21);
   ?>

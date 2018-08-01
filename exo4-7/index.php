@@ -9,30 +9,39 @@
   <p>
   <?php
     // Déclaration de la fonction ageGender
-    function ageGender($age, $gender) {
+    function ageGender($gender, $age) {
     // Condition homme et majeur
     if($gender == 'Homme' && $age >= 18) {
-      echo 'Vous êtes un homme et vous êtes majeur. ';
+      echo 'Vous êtes un homme et vous êtes majeur.';
     }
     // Condition femme et majeur
     else if($gender == 'Femme' && $age >= 18) {
-      echo 'Vous êtes une femme et vous êtes majeur. ';
+      echo 'Vous êtes une femme et vous êtes majeure.';
     }
     // Condition homme et mineur
-   else if($gender == 'Homme' && $age < 18) {
-      echo 'Vous êtes un homme et vous êtes mineur. ';
+    else if($gender == 'Homme' && $age < 18) {
+      echo 'Vous êtes un homme et vous êtes mineur.';
     }
-   else {
+    else {
      // Condition femme et mineur
-      echo 'Vous êtes une femme et vous êtes mineur. ';
+      echo 'Vous êtes une femme et vous êtes mineur.';
     }
   }
   // Appel de la fonction dans différents cas
-  ageGender('Homme', 21);
+  ageGender('Homme',21);
+  ?>
+  <br />
+  <?php
   ageGender('Femme',21);
+  ?>
+  <br />
+  <?php
   ageGender('Femme',15);
+  ?>
+  <br />
+  <?php
   ageGender('Homme',15);
   ?>
-</p>
+  </p>
 </body>
 </html>

@@ -12,19 +12,28 @@
   function test($firstNumber, $secondNumber){
     // Condition si $firstNumber est supérieur à $secondNumber
     if ($firstNumber > $secondNumber) {
-      echo 'Le premier nombre est plus grand.';
+      // Création d'une variable pour les messages
+      $message = 'Le premier nombre est plus grand.';
     // Condition si $firstNumber est identique à $secondNumber
     } elseif ($firstNumber == $secondNumber) {
-      echo 'Les deux nombres sont identiques.';
+      $message = 'Les deux nombres sont identiques.';
     // dans les autre cas
     } else {
-      echo 'Le premier nombre est plus petit.';//
+      $message = 'Le premier nombre est plus petit.';
     }
+    // On ne returne pas plusieurs fois dans une fonction
+    return $message;
   }
   // Appel de la fonction avec différentes variables
-  test(10,5);
-  test(8,23);
-  test(6, 6);
+  echo test(10,5);
+  ?>
+  <br />
+  <?php
+  echo test(8,23);
+  ?>
+  <br />
+  <?php
+  echo test(6, 6);
   ?>
 </p>
 </body>

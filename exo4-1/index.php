@@ -1,3 +1,9 @@
+<?php
+// Création fonction
+function returnTrue(){
+   return true;
+ }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,12 +13,8 @@
 <body>
   <p>
   <?php
-  // Création fonction
-  function returnChoice(){
-     return true;
-   }
-   // Affichage fonction
-   echo returnChoice();
+    // Affichage fonction
+   echo returnTrue();
   ?>
   </p>
 </body>
